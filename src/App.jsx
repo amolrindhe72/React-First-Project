@@ -2,24 +2,18 @@ import { useState } from 'react'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Sidebar from './components/Sidebar.jsx'
-import Employees from './components/Employees.jsx'
-import Departments from './components/Departments.jsx'
-import Addresses from './components/Addresses.jsx'
+import Policies from './components/Policies.jsx'
 import './App.css'
 
 function App() {
-  const [activePage, setActivePage] = useState('employees')
+  const [activePage, setActivePage] = useState('policies')
 
   const renderPage = () => {
     switch (activePage) {
-      case 'employees':
-        return <Employees />
-      case 'departments':
-        return <Departments />
-      case 'addresses':
-        return <Addresses />
+      case 'policies':
+        return <Policies />
       default:
-        return <Employees />
+        return <Policies />
     }
   }
 

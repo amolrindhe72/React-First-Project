@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Employee Management System</h1>
+      <h1>Placement Policy Management System</h1>
     </header>
   )
 }
